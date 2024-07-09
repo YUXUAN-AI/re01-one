@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日快乐</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7e7ce;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .birthday-message {
+            background-color: #fff3e0;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #ff6f61;
+        }
+        p {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="birthday-message">
+        <h1>生日快乐！</h1>
+        <p>愿你的每一天都充满快乐和惊喜。</p>
+    </div>
+
+    <script>
+        // 这里可以添加一些JavaScript代码，例如让页面上的某些元素动起来
+        // 例如，让“生日快乐”文字闪烁
+        function blinkText() {
+            var text = document.querySelector('h1');
+            text.classList.toggle('blink');
+        }
+        setInterval(blinkText, 1000); // 每隔1秒切换一次闪烁状态
+    </script>
+</body>
+</html>
